@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VB Net Beginner Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #e9e6ea; /* light magenta text */
+      background-color: #0a0a0a; /* black fallback */
+      background-image: url("https://media.gettyimages.com/id/1397581125/video/cyber-sport-gamer-play-game.jpg?s=640x640&k=20&c=x-FDn9PcZQ08mFg8qEFlW6Ydp9m8sAmApf3lBu0j1Ug=");
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-position: center;
+    }
+
+    header {
+      background: rgb(0, 0, 0);       
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: magenta;
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+
+  /* Black reflective glass effect */
+  background: rgba(0, 0, 0, 0.4);  /* semi-transparent black */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6); /* subtle black border */
+}
+
+nav a {
+  color: magenta;              /* links match the theme */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.5); /* darker hover */
+}
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7); /* black with transparency */
+      border: 3px solid magenta;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.7);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #ff66ff;
+      border-bottom: 2px solid magenta;
+      padding-bottom: 10px;
+      text-shadow: 0 0 8px black;
+    }
+
+    pre {
+      background: #1a001a;
+      color: #ffb3ff;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid magenta;
+      overflow-x: auto;
+      box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.4);
+    }
+
+    footer {
+      background: #1a001a;
+      color: #ff66ff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 2px solid magenta;
+      box-shadow: 0 -5px 15px rgba(255, 0, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VB Net Beginner Overview</h1>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#applications">Applications</a>
+    <a href="#history">History</a>
+    <a href="#links">Helpful Links</a>
+    <a href="#example">Example Code</a>
+  </nav>
+
+  <!-- One whole bordered container -->
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        Visual Basic .NET (VB.NET) is a modern, object-oriented programming language 
+        developed by Microsoft. It is part of the .NET framework and provides 
+        developers with tools to build Windows applications, web applications, 
+        and more with ease.
+      </p>
+    </section>
+
+    <section id="applications">
+      <h2>Applications</h2>
+      <ul>
+        <li>Windows Forms Applications</li>
+        <li>Web Applications with ASP.NET</li>
+        <li>Database-driven software</li>
+        <li>Automation tools</li>
+        <li>Educational and beginner-friendly projects</li>
+      </ul>
+    </section>
+
+    <section id="history">
+      <h2>History</h2>
+      <p>
+        VB.NET was first released by Microsoft in 2002 as a successor to the classic 
+        Visual Basic 6. It introduced object-oriented programming concepts and was 
+        designed to work seamlessly with the .NET Framework. Today, it continues to 
+        be used by many developers for rapid application development.
+      </p>
+    </section>
+
+    <section id="links">
+      <h2>Helpful Links:</h2>
+      <li>Some links to help you get started and learn the basic structure of VB.NET or if you'd like to challenge yourself to a more advanced approach as well.</li>
+      <ul>
+        <li><a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/" target="_blank">Microsoft VB.NET Documentation</a></li>
+        <li><a href="https://www.tutorialspoint.com/vb.net/index.htm" target="_blank">TutorialsPoint VB.NET</a></li>
+        <li><a href="https://www.w3schools.in/vb.net/" target="_blank">W3Schools VB.NET Guide</a></li>
+      </ul>
+    </section>
+
+    <section id="example">
+      <h2>Example Code</h2>
+      <p>Here’s a simple VB.NET "Hello World" program:</p>
+      <pre>
+Module HelloWorld
+    Sub Main()
+        Console.WriteLine("Hello, World!")
+        Console.ReadLine()
+    End Sub
+End Module
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VB Net Beginner Guide - Kakampink Co.</p>
+  </footer>
+</body>
+</html>
