@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VB.NET Beginner Overview - Tab Version</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>VB.Net Beginner Learning Hub</h1>
+  </header>
+
+  <nav>
+    <a onclick="openTab('overview')">Overview</a>
+    <a onclick="openTab('applications')">Applications</a>
+    <a onclick="openTab('history')">History</a>
+    <a onclick="openTab('links')">Helpful Links</a>
+    <a onclick="openTab('example')">Example Code</a>
+  </nav>
+
+  <main id="tab-container">
+    
+    <div id="overview" class="tab-content active-tab">
+      <h2>Overview</h2>
+      <div class="card">
+        <p>Visual Basic .NET (VB.NET) is a high-level, object-oriented programming language built by Microsoft as part of the .NET ecosystem. It is known for its clear syntax and beginner-friendly structure.</p>
+        <p>VB.NET runs on the .NET runtime (CLR), converting your code into Intermediate Language (IL). This allows cross-system flexibility with strong Windows integration.</p>
+      </div>
+      <div class="card">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Object-Oriented Programming (Classes, Objects, Inheritance)</li>
+          <li>Event-driven GUI programming</li>
+          <li>Automatic memory management via garbage collector</li>
+          <li>Strong error handling (Try...Catch)</li>
+          <li>Fast Windows application development</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="applications" class="tab-content">
+      <h2>Applications</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Windows Forms Apps:</strong> Tools, dashboards, educational apps</li>
+          <li><strong>Database Systems:</strong> MS Access, SQL Server, MySQL via ADO.NET</li>
+          <li><strong>Automation Tools:</strong> File managers, batch processors, auto-clickers</li>
+          <li><strong>Web Apps:</strong> ASP.NET WebForms (less common today)</li>
+          <li><strong>Educational Projects:</strong> Beginner-friendly syntax and event flow</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Where VB.NET is Used</h3>
+        <ul>
+          <li>Small/medium office systems</li>
+          <li>School IT & Capstone projects</li>
+          <li>Government internal apps</li>
+          <li>Automation tools for companies</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="history" class="tab-content">
+      <h2>History of VB.NET</h2>
+      <div class="card">
+        <p>VB.NET is the successor to classic VB6, adding full OOP support and integration with .NET.</p>
+        <h3>Timeline</h3>
+        <ul>
+          <li><strong>1991:</strong> VB 1.0 released</li>
+          <li><strong>1998:</strong> VB6 dominates Windows GUI</li>
+          <li><strong>2002:</strong> Microsoft launches VB.NET</li>
+          <li><strong>2010–2015:</strong> VB evolves alongside C#</li>
+          <li><strong>2020+:</strong> VB.NET runs on modern .NET versions (5–8)</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="links" class="tab-content">
+      <h2>Helpful Links</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/" target="_blank">Official Microsoft VB.NET Documentation</a></li>
+          <li><a href="https://www.tutorialspoint.com/vb.net/index.htm" target="_blank">TutorialsPoint VB.NET</a></li>
+          <li><a href="https://www.w3schools.in/vb.net/" target="_blank">W3Schools VB.NET</a></li>
+          <li><a href="https://visualstudio.microsoft.com/" target="_blank">Download Visual Studio (IDE)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="example" class="tab-content">
+      <h2>Example Code</h2>
+      <div class="code-card">
+<pre>
+Module HelloWorld
+    Sub Main()
+        Console.WriteLine("Hello, World!")
+        Console.ReadLine()
+    End Sub
+End Module
+</pre>
+      </div>
+      <div class="code-card">
+<pre>
+Module Example
+    Sub Main()
+        Console.Write("Enter your name: ")
+        Dim name As String = Console.ReadLine()
+        Console.WriteLine("Hello, " & name)
+    End Sub
+End Module
+</pre>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VB.NET Beginner Guide - Kakampink Co.</p>
+  </footer>
+
+  <script>
+    function openTab(tabName) {
+      document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active-tab"));
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>
